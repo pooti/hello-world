@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         
         
         print("commit test")
+        
+        print("UserInterfaceState.xcuserstate test")
     }
 
     override func didReceiveMemoryWarning() {
