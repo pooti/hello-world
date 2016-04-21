@@ -14,6 +14,7 @@
 		0320A1FF1CB64C250043F142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0320A1FD1CB64C250043F142 /* LaunchScreen.storyboard */; };
 		0320A20A1CB64C250043F142 /* HelloGitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0320A2091CB64C250043F142 /* HelloGitHubTests.swift */; };
 		0320A2151CB64C250043F142 /* HelloGitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0320A2141CB64C250043F142 /* HelloGitHubUITests.swift */; };
+		03814A0E1CC8B854000DFEB7 /* Licenses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03814A0D1CC8B854000DFEB7 /* Licenses.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0320A2101CB64C250043F142 /* HelloGitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloGitHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0320A2141CB64C250043F142 /* HelloGitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloGitHubUITests.swift; sourceTree = "<group>"; };
 		0320A2161CB64C250043F142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03814A0D1CC8B854000DFEB7 /* Licenses.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Licenses.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		0320A1E81CB64C250043F142 = {
 			isa = PBXGroup;
 			children = (
+				03814A0D1CC8B854000DFEB7 /* Licenses.plist */,
 				0320A1F31CB64C250043F142 /* HelloGitHub */,
 				0320A2081CB64C250043F142 /* HelloGitHubTests */,
 				0320A2131CB64C250043F142 /* HelloGitHubUITests */,
@@ -135,6 +138,7 @@
 				0320A1ED1CB64C250043F142 /* Sources */,
 				0320A1EE1CB64C250043F142 /* Frameworks */,
 				0320A1EF1CB64C250043F142 /* Resources */,
+				03814A0C1CC8B808000DFEB7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +235,7 @@
 			files = (
 				0320A1FF1CB64C250043F142 /* LaunchScreen.storyboard in Resources */,
 				0320A1FC1CB64C250043F142 /* Assets.xcassets in Resources */,
+				03814A0E1CC8B854000DFEB7 /* Licenses.plist in Resources */,
 				0320A1FA1CB64C250043F142 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +255,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03814A0C1CC8B808000DFEB7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./fetch_licenses2.swift ${PROJECT_DIR}/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0320A1ED1CB64C250043F142 /* Sources */ = {
@@ -484,6 +505,7 @@
 				0320A21B1CB64C250043F142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0320A21C1CB64C250043F142 /* Build configuration list for PBXNativeTarget "HelloGitHubTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +514,7 @@
 				0320A21E1CB64C250043F142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0320A21F1CB64C250043F142 /* Build configuration list for PBXNativeTarget "HelloGitHubUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +523,7 @@
 				0320A2211CB64C250043F142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
